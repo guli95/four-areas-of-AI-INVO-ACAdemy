@@ -1,0 +1,97 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+@import '../../../global-styles/styles/_root.scss';
+
+#home-page{
+    color: var(--color-white);
+    font-family: 'DM Sans', sans-serif;
+    height: 100%;
+ .flexbox-container{
+    display: flex;
+    justify-content: center;
+    padding: 140px 80px;
+    gap: 90px;
+    margin: 0 auto;
+    @media screen and (max-width:1024px) {
+        flex-direction:column;
+        gap:24px;
+    }
+    @media screen and (max-width:480px) {
+        padding: 48px 16px;
+    }
+    .heading-wrapper{
+        font-family: "DM Sans", sans-serif;
+        text-align: left ;
+        vertical-align: top;
+        max-width: 550px;
+        @media screen and (max-width:1024px) {
+            width: 100%;
+        }
+        .heading-title{
+            font-size: var(--text-xl);
+            font-weight: 500;
+            line-height: 130%;
+            margin-bottom: 24px;
+            @media screen and (max-width:1024px) {
+                margin-bottom: 16px;
+            }
+            @media screen and (max-width:1024px) {
+                font-size: var(--text-l);
+            }
+        }
+        .heading-text{
+            font-size: var(--text-m);
+            line-height: 24px;
+          
+        }
+        @media screen and (max-width:480px) {
+            font-size: var(--text-s);
+        }
+    }
+    .card-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        max-width: 600px;
+        @media screen and (max-width:1024px) {
+            width: 100%;
+            gap:16px;
+        }
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 40%;
+            padding: 24px 16px;
+            background-color:var(--color-secondary-grey);
+            text-align: center;
+            border-radius: var(--rounding-big);
+            @media screen and (max-width:480px) {
+                width: 100%;
+            }
+            .card-img{
+                width: 64px;
+                height: 64px;
+                @media screen and (max-width:1024px) {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+            .card-title{
+                font-size: var(--text-m);
+            }
+            .card-text{
+                font-size: var(--text-s);
+                mix-blend-mode:soft-light;
+                @media screen and (max-width:1024px) {
+                    font-size: var(--text-xs);
+                }
+            }
+        }
+
+    }
+}
+
+}

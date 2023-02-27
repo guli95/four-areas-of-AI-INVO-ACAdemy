@@ -1,0 +1,17 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+@import '../../../global-styles/styles/_root.scss';
+
+
+#home-page{
+    background-color: var(--color-primary-dark-blue);
+    .heading-wrapper{
+        font-family: "DM Sans" serif;
+        font-weight: 500;
+        font-size:  48px;
+        line-height: : 56px;
+        text-align: left: ;
+        vertical-align: top;
+        letter-spacing: -0.2%;
+    }
+}

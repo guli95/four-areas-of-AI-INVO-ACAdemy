@@ -1,0 +1,51 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+@import '../../../global-styles/styles/_root.scss';
+
+
+#home-page{
+    background-color: var(--color-primary-dark-blue);
+    color: var(--color-white);
+ .flexbox-container{
+    display: flex;
+    padding: 140px 152px;
+    gap: 109px;
+    .heading-wrapper{
+        font-family: "DM Sans" serif;
+        text-align: left ;
+        vertical-align: top;
+        letter-spacing: -0.2%;
+        .heading-title{
+            font-size: var(--text-xl);
+            font-weight: 500;
+            line-height: 56px;
+        }
+        .heading-text{
+            font-size: var(--text-x);
+            line-height: 24px;
+          
+        }
+    }
+    .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 40%;
+            background-color:var(--color-secondary-grey);
+            text-align: center;
+            .card-title{
+                font-size: var(--text-m);
+            }
+            .card-text{
+                font-size: var(--tex-s);
+                color: var(--color-primary-dark-blue);
+            }
+        }
+
+    }
+}
+
+}

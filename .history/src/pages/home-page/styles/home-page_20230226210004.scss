@@ -1,0 +1,9 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+@import '../../../global-styles/styles/_root.scss';
+@use '../../../global-styles/styles/root';
+
+#home-page{
+    // background-color: global-variable-exists($name:--color-primary-dark-blue );
+    background-color: --color-primary-dark-blue;
+}
