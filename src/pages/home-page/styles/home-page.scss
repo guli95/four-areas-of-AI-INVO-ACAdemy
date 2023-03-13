@@ -2,100 +2,117 @@
 /// Here we import all the Styles files we need for our Homepage.
 @import '../../../global-styles/styles/_root.scss';
 
-#home-page{
+.home-page{
     color: var(--color-white);
     font-family: 'DM Sans',sans-serif;
     height: 100%;
+    
  .flexbox-container{
+    max-width: 1440px;
+    padding: 0 20px;
     display: flex;
     justify-content: center;
-    padding: 140px 80px;
-    gap: 90px;
-    margin: 0 auto;
-    @media screen and (max-width:1024px) {
+    margin: 160px auto 0 auto;
+    gap: 0px;
+    @media screen and (max-width:1191px) {
         flex-direction:column;
         align-items: center;
-        gap:24px;
+        margin-top: 247px;
     }
     @media screen and (max-width:480px) {
-        padding: 48px 16px;
+        padding: 48px 24px;
+        margin-top: 0px;
     }
-    .heading-wrapper{
+    .heading{
         font-family: "DM Sans", sans-serif;
         text-align: left ;
         vertical-align: top;
-        max-width: 550px;
-        @media screen and (max-width:1024px) {
+        max-width: 480px;
+        padding-left: 30px;
+        padding-right: 60px;
+        @media screen and (max-width:1191px) {
             width: 100%;
-            padding: 0 16px;
+            padding: 0 14px;
+            max-width: 500px;
         }
-        .heading-title{
+        &__title{
             font-size: var(--text-xl);
             font-weight: 500;
             line-height: 115%;
+            letter-spacing: 0.2%;
             margin: 0 0 24px 0;
-            @media screen and (max-width:1024px) {
-                margin-bottom: 16px;
+            @media screen and (max-width:1191px) {
+                margin-bottom: 10px;
+                
             }
-            @media screen and (max-width:1024px) {
+            @media screen and (max-width:480px) {
                 font-size: var(--text-l);
+                margin-bottom: 20px;
             }
         }
-        .heading-text{
+        &__text{
             font-size: var(--text-m);
             line-height: 24px;
-            font-weight: 400;
-          
-        }
+            font-weight: 300;
         @media screen and (max-width:480px) {
-            font-size: var(--text-s);
+            font-size: var(--text-s);           
+            }
         }
     }
-    .card-container{
+    .cards{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 24px;
-        max-width: 600px;
-        @media screen and (max-width:1024px) {
+        max-width: 620px;
+        @media screen and (max-width:1191px) {
             width: 100%;
             gap:16px;
+            max-width: 500px;
         }
-        .card-link{
+        .card{
             display: flex;
             color: var(--color-white);
             text-decoration: none;
             flex-direction: column;
-            justify-content: space-around;
             align-items: center;
-            width: 40%;
-            padding: 24px 16px;
+            max-width: 240px;
+            max-width: 250px;
+            min-height: 200px;
+            padding: 22px 10px;
             background-color:var(--color-secondary-grey);
             text-align: center;
             border-radius: var(--rounding-big);
             transition: .2s;
-            &:hover{
-                background-color: lighten($color: #272D42, $amount: 10) ;
+            @media screen and (max-width:1191px) {
+                max-width: 220px;
+                padding-bottom: 0;
+                justify-content: flex-start;
+                min-height: auto;
             }
             @media screen and (max-width:480px) {
                 width: 100%;
+                min-height:auto;
+                max-width: none;
             }
-            .card-img{
+            &__img{
                 width: 64px;
                 height: 64px;
-                @media screen and (max-width:1024px) {
+                @media screen and (max-width:1191px) {
                     width: 56px;
                     height: 56px;
                 }
             }
-            .card-title{
+            &__title{
                 font-size: var(--text-m);
                 font-weight: 500;
+                margin-top: 12px;
             }
-            .card-text{
+            &__text{
                 font-size: var(--text-s);
                 mix-blend-mode:soft-light;
-                @media screen and (max-width:1024px) {
+                line-height: 24px;
+                @media screen and (max-width:1191px) {
                     font-size: var(--text-xs);
                 }
             }

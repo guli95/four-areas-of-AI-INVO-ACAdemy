@@ -1,0 +1,118 @@
+/// Homepage Styles File
+/// Here we import all the Styles files we need for our Homepage.
+@import '../../../global-styles/styles/_root.scss';
+
+#home-page{
+    color: var(--color-white);
+    font-family: 'DM Sans',sans-serif;
+    height: 100%;
+    
+ .flexbox-container{
+    max-width: 1440px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    margin: 160px auto 0 auto;
+    gap: 0px;
+    @media screen and (max-width:1191px) {
+        flex-direction:column;
+        align-items: center;
+        margin-top: 220px;
+        gap:24px;
+    }
+    @media screen and (max-width:480px) {
+        padding: 48px 16px;
+    }
+    .heading-wrapper{
+        font-family: "DM Sans", sans-serif;
+        text-align: left ;
+        vertical-align: top;
+        max-width: 480px;
+        padding-left: 30px;
+        padding-right: 60px;
+        @media screen and (max-width:1024px) {
+            width: 100%;
+            padding: 0 16px;
+        }
+        .heading-title{
+            font-size: var(--text-xl);
+            font-weight: 500;
+            line-height: 115%;
+            letter-spacing: 0.2%;
+            margin: 0 0 24px 0;
+            @media screen and (max-width:1024px) {
+                margin-bottom: 16px;
+            }
+            @media screen and (max-width:1024px) {
+                font-size: var(--text-l);
+            }
+        }
+        .heading-text{
+            font-size: var(--text-m);
+            line-height: 24px;
+            font-weight: 300;
+          
+        }
+        @media screen and (max-width:480px) {
+            font-size: var(--text-s);
+        }
+    }
+    .card-container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        max-width: 620px;
+        @media screen and (max-width:1024px) {
+            width: 100%;
+            gap:16px;
+        }
+        .card-link{
+            display: flex;
+            color: var(--color-white);
+            text-decoration: none;
+            flex-direction: column;
+            // justify-content: space-evenly;
+            align-items: center;
+            max-width: 240px;
+            max-width: 250px;
+            min-height: 200px;
+            padding: 22px 10px;
+            background-color:var(--color-secondary-grey);
+            text-align: center;
+            border-radius: var(--rounding-big);
+            transition: .2s;
+            &:hover{
+                background-color: lighten($color: #272D42, $amount: 10) ;
+            }
+            @media screen and (max-width:480px) {
+                width: 100%;
+                min-height:auto;
+            }
+            .card-img{
+                width: 64px;
+                height: 64px;
+                @media screen and (max-width:1024px) {
+                    width: 56px;
+                    height: 56px;
+                }
+            }
+            .card-title{
+                font-size: var(--text-m);
+                font-weight: 500;
+                margin-top: 12px;
+            }
+            .card-text{
+                font-size: var(--text-s);
+                mix-blend-mode:soft-light;
+                line-height: 24px;
+                @media screen and (max-width:1024px) {
+                    font-size: var(--text-xs);
+                }
+            }
+        }
+
+    }
+}
+
+}
